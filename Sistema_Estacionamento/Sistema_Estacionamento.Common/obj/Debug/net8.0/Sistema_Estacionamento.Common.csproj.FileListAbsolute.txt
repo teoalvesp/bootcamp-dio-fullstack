@@ -1,0 +1,12 @@
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\bin\Debug\net8.0\Sistema_Estacionamento.Common.deps.json
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\bin\Debug\net8.0\Sistema_Estacionamento.Common.dll
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\bin\Debug\net8.0\Sistema_Estacionamento.Common.pdb
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.AssemblyInfoInputs.cache
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.AssemblyInfo.cs
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.csproj.CoreCompileInputs.cache
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.sourcelink.json
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.dll
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\refint\Sistema_Estacionamento.Common.dll
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\Sistema_Estacionamento.Common.pdb
+C:\Area Dev\bootcamp-dio-fullstack\Sistema_Estacionamento\Sistema_Estacionamento.Common\obj\Debug\net8.0\ref\Sistema_Estacionamento.Common.dll

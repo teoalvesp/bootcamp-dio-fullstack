@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Sistema_Estacionamento/1.0.0": {
+        "dependencies": {
+          "Sistema_Estacionamento.Common": "1.0.0"
+        },
+        "runtime": {
+          "Sistema_Estacionamento.dll": {}
+        }
+      },
+      "Sistema_Estacionamento.Common/1.0.0": {
+        "runtime": {
+          "Sistema_Estacionamento.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sistema_Estacionamento/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sistema_Estacionamento.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

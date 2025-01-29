@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Sistema_Estacionamento.Common/1.0.0": {
+        "runtime": {
+          "Sistema_Estacionamento.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sistema_Estacionamento.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
