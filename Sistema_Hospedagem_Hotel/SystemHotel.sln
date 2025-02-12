@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemHotel", "SystemHotel\SystemHotel.csproj", "{D1FDA312-DB19-40D2-9396-6B57A8439C1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemHotel.Common", "SystemHotel.Common\SystemHotel.Common.csproj", "{C81ED65D-E8DC-49C0-83A7-893F491D8068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1FDA312-DB19-40D2-9396-6B57A8439C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FDA312-DB19-40D2-9396-6B57A8439C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FDA312-DB19-40D2-9396-6B57A8439C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FDA312-DB19-40D2-9396-6B57A8439C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81ED65D-E8DC-49C0-83A7-893F491D8068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81ED65D-E8DC-49C0-83A7-893F491D8068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81ED65D-E8DC-49C0-83A7-893F491D8068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81ED65D-E8DC-49C0-83A7-893F491D8068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
