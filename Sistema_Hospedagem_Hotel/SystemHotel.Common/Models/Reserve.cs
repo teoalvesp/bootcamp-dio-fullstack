@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using SystemHotel.Common.Models;
 
 namespace SystemHotel.Common.Models
 {
     public class Reserve
     {
+        private static int nextId = 1;
+        public int Id { get; private set; }
         public List<Person>? Guests { get; set; }
         public Suite? Suite { get; set; }
         public int DaysReserved { get; set; }
 
         public Reserve()
         {
+            Id = nextId++;
             Guests = new List<Person>();
         }
 
@@ -35,7 +39,7 @@ namespace SystemHotel.Common.Models
         public void RegisterSuite(Suite suite)
         {
             Suite = suite;
-            Console.WriteLine("Suite registrada com sucesso");
+            Console.WriteLine("\n>> Suite registrada com sucesso");
         }
 
         public int GetNumberGuests()
@@ -52,10 +56,10 @@ namespace SystemHotel.Common.Models
 
             decimal total = Suite.DailyValue * DaysReserved;
 
-            // Aplicar desconto se houver mais de uma pessoa (opcional)
+
             if (Guests.Count > 1)
             {
-                total *= 0.90m; // Desconto de 10%
+                total *= 0.90m;
             }
 
             return total;

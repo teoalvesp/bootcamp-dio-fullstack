@@ -13,5 +13,10 @@ namespace SystemHotel.Common.Models
         {
             Reserves = new List<Reserve>();
         }
+
+        public void AddReserves(Reserve reserve)
+        {
+            Reserves.Add(reserve);
+        }
     }
 }

@@ -1,58 +1,68 @@
-﻿using System.Diagnostics;
-using SystemHotel;
+﻿using SystemHotel;
 using SystemHotel.Common.Models;
 
 HotelManager hotelManager = new();
-Reserve reserve = new();
+ReserveList hotel = new();
 
-// Aciona a interação inicial com o usuário
-string option = Display.InitialMenu();
-
-// Define o método Menu fora do escopo principal
-void Menu(string option)
+// Função principal para exibir o menu e gerenciar as opções
+void Menu()
 {
-    switch (option)
+    while (true)
     {
-        case "1":
-            if (reserve.Suite == null)
-            {
-                var suite = hotelManager.RegisterSuite();
-                reserve.RegisterSuite(suite);
-            }
+        // Exibe o menu inicial
+        string option = Display.InitialMenu();
 
-            // Garantir que a Suite não é nula antes de registrar os hóspedes
-            if (reserve.Suite != null)
-            {
-                var guests = hotelManager.RegisterGuests(reserve.Suite);
-                reserve.RegisterGuests(guests);
-            }
-            else
-            {
-                Console.WriteLine("Erro: Suite não está registrada.");
-            }
+        switch (option)
+        {
+            case "1": // Check-in
+                var suite = hotelManager.RegisterSuite(); // Registra uma suíte
+                if (suite != null)
+                {
+                    Reserve newReserve = new();
+                    newReserve.RegisterSuite(suite); // Associa a suíte à reserva
 
-            break;
+                    // Solicita o número de dias da reserva
+                    Console.Write("\nDigite o número de dias para a reserva: ");
+                    int days;
+                    while (!int.TryParse(Console.ReadLine(), out days) || days <= 0)
+                    {
+                        Console.WriteLine("Número de dias inválido. Por favor, insira um número positivo.");
+                    }
+                    newReserve.DaysReserved = days; // Define os dias reservados na nova reserva
 
-        case "2":
-            // Lógica para o caso 2
-            break;
+                    var guests = hotelManager.RegisterGuests(suite); // Registra hóspedes
+                    newReserve.RegisterGuests(guests); // Associa hóspedes à reserva
 
-        case "3":
-            Thread.Sleep(500);
-            Console.Clear();
-            Console.WriteLine("\n>> Saindo do Sistema..");
-            Thread.Sleep(500);
-            return;
+                    hotel.AddReserves(newReserve); // Adiciona a reserva ao hotel
+                    Console.WriteLine(">> Check-in realizado com sucesso!");
+                }
+                else
+                {
+                    Console.WriteLine("Erro: Falha ao registrar a suíte.");
+                }
+                break;
 
-        default:
-            Console.WriteLine("Opção inválida. Tente novamente.");
-            break;
+
+            case "2": // Check-out
+                hotelManager.RemoveGuests(hotel); // Remove hóspedes por número de reserva
+                break;
+
+            case "3": // Reservas
+                hotelManager.GetReservesList(hotel); // Exibe a lista de reservas
+                break;
+
+            case "4": // Sair
+                Console.Clear();
+                Console.WriteLine("\n>> Saindo do Sistema...");
+                Thread.Sleep(500);
+                return; // Sai do programa
+
+            default:
+                Console.WriteLine(">> Opção inválida. Tente novamente.");
+                break;
+        }
     }
-
-    // Solicita uma nova opção após executar o caso atual
-    option = Display.InitialMenu();
-    Menu(option);
 }
 
-// Chama o método Menu
-Menu(option);
+// Chama o método Menu para iniciar o programa
+Menu();

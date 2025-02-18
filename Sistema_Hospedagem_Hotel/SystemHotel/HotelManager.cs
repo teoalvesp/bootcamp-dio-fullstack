@@ -29,9 +29,25 @@ namespace SystemHotel
             return suite;
         }
 
-        public void RemoveGuests()
+        public void RemoveGuests(ReserveList hotel)
         {
-            // Lógica para remover hóspedes
+            if (hotel.Reserves.Count > 0)
+            {
+                Display.CheckOutDisplay(hotel);
+            }
+            else
+            {
+                Thread.Sleep(500);
+                Console.Write("\n>> O Hotel ainda não possui Hóspedes!");
+                Thread.Sleep(1200);
+            }
+
         }
+
+        public void GetReservesList(ReserveList hotel)
+        {
+            Display.DisplayReservations(hotel);
+        }
+
     }
 }
